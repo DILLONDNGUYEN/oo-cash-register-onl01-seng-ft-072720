@@ -48,6 +48,6 @@ class CashRegister
     self.total = @total - @transactions.pop
     if self.total = @total
       return 0.0
-   
+    end  
   end
 end
