@@ -7,7 +7,7 @@ require 'pry'
 # items, returns an array containing all items that have been added
 # void_last_transaction, subtracts the last item from the total, returns the total to 0.0 if all items have been removed
 
-
+require 'pry'
 
 class CashRegister
   attr_accessor :total, :discount, :quantity, :price
@@ -46,5 +46,6 @@ class CashRegister
 
   def void_last_transaction
     self.total = @total - @transactions.pop
+    binding pry
   end
 end
