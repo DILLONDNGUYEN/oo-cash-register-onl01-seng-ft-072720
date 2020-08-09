@@ -49,6 +49,6 @@ class CashRegister
     #if self.total = @total
       #return 0.0
       binding.pry
-    end  
+    #end  
   end
 end
